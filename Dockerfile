@@ -9,4 +9,4 @@ RUN rm -rf "$(pip cache dir)"
 
 RUN python download_model.py
 
-ENTRYPOINT ["streamlit", "run", "streamlit_app.py"]
+ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.enableCORS=false"]

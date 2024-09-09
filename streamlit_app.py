@@ -49,7 +49,7 @@ def main():
                    fixed_token=os.getenv('GOTIFY_APP_TOKEN'),
                    fixed_priority=9)
 
-    if st.sidebar.button('CLEAR'):
+    if st.sidebar.button('CLEARe'):
         st.session_state['key'] = K
         st.experimental_rerun()
     st.sidebar.markdown('---')

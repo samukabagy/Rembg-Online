@@ -10,7 +10,7 @@ services:
     environment:
       - ENABLE_CORS=false
     command: >
-      streamlit run streamlit_app.py
+      streamlit run streamlit_app.py --server.enableCORS=false --server.enableXsrfProtection=false
     restart: always
     volumes:
       - "./.streamlit:/home/app/.streamlit"
